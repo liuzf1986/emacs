@@ -1,0 +1,24 @@
+*  安装cscope
+
+*  安装clang
+
+*  bash-completion 需要安装执行文件
+   sudo apt-get install bash-completion
+   添加脚本到.bashrc
+
+   if [[ ( -z "$INSIDE_EMACS" || "$EMACS_BASH_COMPLETE" = "t" ) &&\
+   -f /etc/bash_completion ]]; then
+   . /etc/bash_completion
+   fi
+
+   
+
+*  emacs client模式启动方案
+   bash启动加入
+   #用ec来快速启动emacs client
+   alias ec='emacsclient -t -a ""'
+   #现在可以将emacs设为默认编辑器啦:P
+   export EDITOR="ec"
+
+
+
