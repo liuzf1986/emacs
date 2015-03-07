@@ -1,0 +1,29 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Aug 28 12:56:06 2014
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.elisp/relevance/" "~/懽缿面/懳磻命懨麘文懠夹/producer-consumer/producer.c" "~/.elisp/init.el" "~/.elisp/plugins-manager.el" "~/workspace/conference_svn/movnow_conference/jni/media/IncomingTransaction.cpp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/root/懽缿面/懳磻命懨麘文懠夹/producer-consumer/producer.c"
+  "producer.c"
+  'c-mode
+  '(abbrev-mode linum-mode yas-minor-mode autopair-mode auto-complete-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
