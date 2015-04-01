@@ -143,5 +143,7 @@
 ;(enable-desktop)
 ;(enable-protobuf)
 ;(enable-multi-term)
+(enable-auto-complete-java)
+(enable-auto-complete-ispell)
 ;; --------------------------- plugins feathers ----------------------------
 

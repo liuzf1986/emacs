@@ -260,6 +260,26 @@
   (add-hook 'c-mode-hook 'mproj:apply-proj)
 )
 
+(defun enable-auto-complete-java ()
+  (require 'ajc-java-complete-config)
+  (setq ajc-tag-file (concat emacs-relevance-path "/java-tags/java_base.tag"))
+  (add-hook 'java-mode-hook 'ajc-java-complete-mode)
+  (add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
+  (local-set-key (kbd "C-c i") (quote ajc-import-all-unimported-class))
+  (local-set-key (kbd "C-c m") (quote ajc-import-class-under-point))
+)
+
+(defun enable-auto-complete-ispell ()
+  (require 'ac-ispell)
+  (custom-set-variables
+   '(ac-ispell-requires 4)
+   '(ac-ispell-fuzzy-limit 2))
+
+  (eval-after-load "auto-complete"
+	'(progn
+	   (ac-ispell-setup)))
+)
+
 (provide 'plugins-manager)
 
 
