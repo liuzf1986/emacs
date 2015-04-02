@@ -269,17 +269,6 @@
   (local-set-key (kbd "C-c m") (quote ajc-import-class-under-point))
 )
 
-(defun enable-auto-complete-ispell ()
-  (require 'ac-ispell)
-  (custom-set-variables
-   '(ac-ispell-requires 4)
-   '(ac-ispell-fuzzy-limit 2))
-
-  (eval-after-load "auto-complete"
-	'(progn
-	   (ac-ispell-setup)))
-)
-
 (provide 'plugins-manager)
 
 
