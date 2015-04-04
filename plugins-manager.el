@@ -260,6 +260,11 @@
   (add-hook 'c-mode-hook 'mproj:apply-proj)
 )
 
+(defun enable-doxymacs ()
+  (require 'doxymacs)
+  (add-hook 'c-mode-common-hook 'doxymacs-mode)
+)
+
 (defun enable-auto-complete-java ()
   (require 'ajc-java-complete-config)
   (setq ajc-tag-file (concat emacs-relevance-path "/java-tags/java_base.tag"))

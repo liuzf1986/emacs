@@ -144,5 +144,6 @@
 ;(enable-protobuf)
 ;(enable-multi-term)
 (enable-auto-complete-java)
+(enable-doxymacs)
 ;; --------------------------- plugins feathers ----------------------------
 
